@@ -1,0 +1,4 @@
+@import '~bootstrap/dist/css/bootstrap.min.css'; /* dit in combinatie met: 'npm install bootstrap'  in de terminal (npm éérst installeren!) doet bootstrap werken */
+p{
+  font-family: Lato;
+}
