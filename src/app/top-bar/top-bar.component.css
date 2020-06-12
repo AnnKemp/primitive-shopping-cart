@@ -1,5 +1,24 @@
+/* materializecss.com/icons.html is de link voor de icoontjes zoals de shoppingcart van te halen */
 header{
   background-color: cornflowerblue;
-  width: 100%;
+  width: 90%;
   height: 16%;
+  padding: 10px;
+  font-family: sans-serif;
+  color:white;
+}
+h1{
+  width: 20%;
+}
+a{
+  text-decoration: none;
+  color: white
+}
+.button{
+  font-size:0.8em;
+  width: 100px;
+  height: 40px;
+  background-color: white;
+  color:cornflowerblue;
+  display: block;
 }

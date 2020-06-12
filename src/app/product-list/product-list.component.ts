@@ -8,8 +8,8 @@ import { products } from '../products';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent{
-  products = products; // dit vind ik nog een beetje 'weird', moet dat geen let products zijn?
-
+  // dit is dus een products property (normaal wordt dan toch een waarde toegewezen na dubbel punt?
+  products = products;
   share(){
     window.alert('The product has been shared!');
   }
