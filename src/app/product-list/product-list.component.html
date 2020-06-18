@@ -1,9 +1,9 @@
 <h2>Products</h2>
 <!-- *ngFor om de lijst van producten of te spelen in een for-lus is een 'structural directive' -->
-<div *ngFor="let product of products">
+<div *ngFor="let product of products; index as productId"><!-- dus de index van de array wordt in productId opgeslagen en verderop bij de [routerLink] gebruikt onclick als verwijzing om de details op te halen van het aangeklikte product -->
 <h3>
   <!-- die vierkante haakjes zijn de property-binding syntax voor de link naar de product details voor elk product. property binding [] lets you use the property value in a template expression -->
-  <a [title]="product.name + ' details'">
+  <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
      {{ product.name }} <!-- met de dubbele gekrolde haakjes haal je specifiek de product.name er uit, dit heet interpolation syntax -->
   </a>
 </h3>
