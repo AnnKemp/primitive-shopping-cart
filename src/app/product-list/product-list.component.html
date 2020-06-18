@@ -1,5 +1,5 @@
 <h2>Products</h2>
-<!-- *ngFor om de lijst van producten of te spelen in een for-lus -->
+<!-- *ngFor om de lijst van producten of te spelen in een for-lus is een 'structural directive' -->
 <div *ngFor="let product of products">
 <h3>
   <!-- die vierkante haakjes zijn de property-binding syntax voor de link naar de product details voor elk product. property binding [] lets you use the property value in a template expression -->
@@ -13,5 +13,5 @@
   <button (click)="share()"><!-- the share() method is in product-list.component.ts. Event binding uses a set of parentheses, around the event, as in following <button> element-->
     Share
   </button>
-  <app-product-alerts [product]="product"></app-product-alerts>
+  <app-product-alerts [product]="product" (notify)="onNotify()"></app-product-alerts>
 </div>
