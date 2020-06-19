@@ -8,7 +8,6 @@ export class CartService {
   items = []; // items is a property and used to store the array of the current products in the cart
   constructor(private http: HttpClient) { // inject the HttpClient to use
   }
-
   addToCart(product){
     this.items.push(product);
   }
