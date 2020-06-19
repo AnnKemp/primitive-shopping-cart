@@ -22,5 +22,12 @@ export class CartComponent implements OnInit {
   ngOnInit() {
     this.items = this.cartService.getItems(); // set the items using the cart service getItems() method
   }
+  onSubmit(customerData){ // waar komen die customerData nu weer vandaan . .  even checken
+    // Process checkout data here
+    this.items = this.cartService.clearCart(); // making items empty using the car service clearCart() method
+    this.checkoutForm.reset(); // om het formulier leeg te maken of toch de waarden uit het formulier
+
+    console.warn('Your order has been submitted', customerData);
+  }
 
 }
