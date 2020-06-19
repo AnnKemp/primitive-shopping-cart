@@ -25,6 +25,7 @@ import { CartComponent } from './cart/cart.component';
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent}, // het pad naar productdetails om de details/extra info van producten te bekijken, doorverbinden via productId.
+      { path: 'cart', component: CartComponent },
     ])
   ],
   providers: [],
