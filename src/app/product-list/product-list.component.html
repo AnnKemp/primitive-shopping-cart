@@ -5,8 +5,9 @@
   <!-- die vierkante haakjes zijn de property-binding syntax voor de link naar de product details voor elk product. property binding [] lets you use the property value in a template expression -->
   <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
      {{ product.name }} <!-- met de dubbele gekrolde haakjes haal je specifiek de product.name er uit, dit heet interpolation syntax -->
-  </a><br />
+<br />
   <img src="../../assets/img/{{ product.photo }}" width="200" />
+  </a><br />
 </h3>
   <p *ngIf="product.description"><!-- voorwaarde: indien die data aanwezig? toon dan:-->
       Description: {{ product.description }}
