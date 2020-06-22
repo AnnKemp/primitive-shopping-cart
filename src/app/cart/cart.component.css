@@ -20,6 +20,7 @@ button{
   border-radius:2px;
   font-size: 1em;
   font-weight: bold;
+  margin-bottom: 30px;
 }
 button:hover{
   background-color: gainsboro;
@@ -52,4 +53,14 @@ label{
   margin-top: 4px;
   margin-bottom: 0px;
 }
+@media screen and (max-width: 800px) {
+  input {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 600px){
+  input {
+    width: 95%;
+  }
 
+}
