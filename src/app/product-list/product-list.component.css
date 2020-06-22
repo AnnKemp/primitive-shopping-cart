@@ -6,12 +6,18 @@ h3 a{
 }
 button{
   background-color: cornflowerblue;
+  width: 100px;
+  height: 40px;
   color:white;
   border:none;
   padding:5px;
   border-radius:2px;
   font-size: 0.7em;
   font-weight: bold;
+}
+button:hover{
+  background-color: aliceblue;
+  color: cornflowerblue;
 }
 p{
   font-size: 0.8em;
