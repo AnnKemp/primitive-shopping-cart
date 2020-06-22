@@ -1,8 +1,7 @@
 <h2>Product Details</h2>
 <div *ngIf="product">
   <h3>{{ product.name }}</h3>
-  <img src="../img/{{ product.photo }}" width="100" />
-  <img src="../img/phone_1.png" width="200" />
+  <img src="../../assets/img/{{ product.photo }}" width="260" />
   <p>{{ product.description }}</p>
   <h4>{{ product.price | currency }}</h4> <!-- moet die dollars nog aanpassen naar euro's -->
 

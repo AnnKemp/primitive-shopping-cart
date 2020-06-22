@@ -1,0 +1,14 @@
+footer{
+  position: relative;
+  float: left;
+  clear: both;
+  background-color: cornflowerblue;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  padding-bottom: 15px;
+  font-family: sans-serif;
+  color:white;
+  margin-bottom:0;
+}
