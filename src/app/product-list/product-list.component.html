@@ -15,5 +15,8 @@
   <button (click)="share()"><!-- the share() method is in product-list.component.ts. Event binding uses a set of parentheses, around the event, as in following <button> element-->
     SHARE
   </button>
+
   <app-product-alerts [product]="product" (notify)="onNotify()"></app-product-alerts>
+
 </div>
+<div id="myModal" class="modal">

@@ -13,6 +13,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
-    FooterComponent
+    FooterComponent,
+    ContactComponent
   ],
   imports: [ // add the HttpClientModule to @ngModule() imports array to register Angular's HttpClient providers globally
     BrowserModule,
@@ -34,6 +36,7 @@ import { FooterComponent } from './footer/footer.component';
       { path: 'products/:productId', component: ProductDetailsComponent}, // het pad naar productdetails om de details/extra info van producten te bekijken, doorverbinden via productId.
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
+      { path: 'contact', component: ContactComponent},
     ])
   ],
   providers: [],
