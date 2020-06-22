@@ -1,8 +1,48 @@
-div{
-  background-color: gainsboro;
-  width: 300px;
-  height: 40px;
-  padding: 5px;
-  font-size: 18px;
-  margin-bottom: 8px;
+
+a, h3{
+  color: cornflowerblue;
+  text-decoration: none;
+  font-size: 1.6em;
+  font-weight: lighter;
 }
+a:hover{
+  background-color: cornflowerblue;
+  color:white;
+  padding:8px;
+  border-radius:2px;
+}
+
+button{
+  background-color: cornflowerblue;
+  color:white;
+  border:none;
+  padding:10px;
+  border-radius:2px;
+  font-size: 1em;
+  font-weight: bold;
+}
+button:hover{
+  background-color: gainsboro;
+  color: cornflowerblue;
+}
+p{
+  font-size: 0.9em;
+  width: 20%;
+  line-height: 1.6em;
+}
+input{
+  padding:10px;
+  border-radius:2px;
+  font-size: 1em;
+  margin-top:0px;
+  margin-bottom: 10px;
+  border: solid 1px gray;
+  width: 30%;
+}
+label{
+  display: block;
+  height: 0.6em;
+  margin-top: 4px;
+  margin-bottom: 0px;
+}
+
