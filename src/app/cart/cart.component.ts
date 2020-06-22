@@ -31,3 +31,4 @@ export class CartComponent implements OnInit {
   }
 
 }
+// nog een fout in het adress, het adress wordt nog niet leeggemaakt of verstuurt en de namen + prijzen worden niet getoont voordat ik het formulier invul.

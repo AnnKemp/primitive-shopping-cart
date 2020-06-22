@@ -1,7 +1,8 @@
 <h2>Product Details</h2>
 <div *ngIf="product">
   <h3>{{ product.name }}</h3>
-  <h4>{{ product.price | currency }}</h4> <!-- moet die dollars nog aanpassen naar euro's -->
   <p>{{ product.description }}</p>
+  <h4>{{ product.price | currency }}</h4> <!-- moet die dollars nog aanpassen naar euro's -->
+
   <button (click)="addToCart(product)">Buy</button>
 </div>
