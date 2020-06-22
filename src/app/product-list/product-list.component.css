@@ -21,9 +21,13 @@ button:hover{
 }
 p{
   font-size: 0.8em;
-  width: 20%;
+  width: 60%;
   line-height: 1.6em;
 }
 h2{
   font-weight: lighter;
+}
+div{
+  position: relative;
+  float: left;
 }
