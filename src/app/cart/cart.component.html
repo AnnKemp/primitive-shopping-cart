@@ -2,6 +2,7 @@
 <p>
   <a routerLink="/shipping">Shipping Prices</a>
 </p>
+product:
 <div class="cart-item" *ngFor="let item of items">
   <span>{{ item.name }}</span>&nbsp;&nbsp;
   <span>{{ item.price | currency }}</span>
@@ -9,7 +10,7 @@
 <!-- ngSubmit (bestaat al en is van Angular) event binding is used to listen for the form submission and call the onSubmit() method
 formGroup (bestaat ook al en is van Angular) property binding to bind the checkoutForm to the form tag in the template -->
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
-
+Destination:<br /><br />
     <label for="name">Name</label><br />
     <input id="name" type="text" formControlName="name">
     <!-- formControlName is van Angular, attribute binding to bind the checkoutForm form controls for name and address to their input fields -->
